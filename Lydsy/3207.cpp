@@ -13,7 +13,7 @@ int a[Maxn];
 int hash[Maxn];
 
 const int MaxNode = 200000 * 20;
-
+ 
 class Node
 {
 public:
