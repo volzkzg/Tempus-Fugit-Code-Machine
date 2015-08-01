@@ -22,8 +22,6 @@
 - [ ] 做一套 CF 题。（VK Cup 2015 - Finals, online mirror）
 a）
 
-#### 杜泓睿
-- [x] 做一套 CF 题。（Codeforces Round #313 (Div. 2)）
 
 #### 高必成
 - [ ] 做一套 TC 题。（SRM 625 Div1）
