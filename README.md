@@ -1,7 +1,6 @@
 #  Tempus-Fugit-Code-Machine
 
 ## Timeline
---------------------
 
 ### 30 Jul
 
