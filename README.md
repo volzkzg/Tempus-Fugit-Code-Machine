@@ -1,5 +1,5 @@
 #  Tempus-Fugit-Code-Machine
-# 基因交流啊
+
 ## Timeline
 
 ### 30 Jul
