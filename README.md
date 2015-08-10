@@ -55,3 +55,14 @@
 #### 高必成
 - [x] 完成8月6日比赛的A题。
 
+### 10 Aug
+
+#### 谢天成
+- [ ] Andrew Stankevich #14 I、F
+
+#### 杜泓睿
+- [ ] Andrew Stankevich #14 C
+
+#### 高必成
+- [ ] Andrew Stankevich #14 D
+
