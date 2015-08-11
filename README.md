@@ -61,8 +61,8 @@
 - [ ] Andrew Stankevich #14 I、F
 
 #### 杜泓睿
-- [ ] Andrew Stankevich #14 C
+- [x] Andrew Stankevich #14 C
 
 #### 高必成
-- [ ] Andrew Stankevich #14 D
+- [x] Andrew Stankevich #14 D
 
