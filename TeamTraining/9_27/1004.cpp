@@ -1,0 +1,187 @@
+#include <cstdio>
+#include <cstring>
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <queue>
+#include <utility>
+#include <bitset>
+
+using namespace std;
+
+const int Maxn = 1100;
+
+int nxtA[Maxn][30], nxtB[Maxn][30];
+vector<int> rA[Maxn], rB[Maxn];
+
+bool accA[Maxn], accB[Maxn];
+int possiA[Maxn], possiB[Maxn];
+
+bitset<Maxn> vis[Maxn];
+int pre[Maxn][Maxn];
+
+int main()
+{
+	int T;
+	scanf("%d", &T);
+	for(int iCase = 1; iCase <= T; ++iCase)
+	{
+		printf("Case #%d: ", iCase);
+		memset(nxtA, -1, sizeof nxtA);
+		memset(nxtB, -1, sizeof nxtB);
+		memset(accA, false, sizeof accA);
+		int nA, mA, kA;
+		int nB, mB, kB;
+		scanf("%d%d%d", &nA, &mA, &kA);
+		for(int i = 0; i < kA; ++i)
+		{
+			int x;
+			scanf("%d", &x);
+			accA[x] = true;
+		}
+		for(int i = 0; i < mA; ++i)
+		{
+			int p, q;
+			static char s[10];
+			scanf("%d%d%s", &p, &q, s);
+			nxtA[p][s[0] - 'a'] = q;
+		}
+		scanf("%d%d%d", &nB, &mB, &kB);
+		for(int i = 0; i <= nB; ++i)
+			accB[i] = true;
+		for(int i = 0; i < kB; ++i)
+		{
+			int x;
+			scanf("%d", &x);
+			accB[x] = false;
+		}
+		for(int i = 0; i < mB; ++i)
+		{
+			int p, q;
+			static char s[10];
+			scanf("%d%d%s", &p, &q, s);
+			nxtB[p][s[0] - 'a'] = q;
+		}
+		
+		for(int i = 0; i < nA; ++i)
+			for(int j = 0; j < 26; ++j)
+				if(nxtA[i][j] == -1)
+					nxtA[i][j] = nA;
+		for(int i = 0; i < nB; ++i)
+			for(int j = 0; j < 26; ++j)
+				if(nxtB[i][j] == -1)
+					nxtB[i][j] = nB;
+		for(int j = 0; j < 26; ++j)
+			nxtA[nA][j] = nA, nxtB[nB][j] = nB;
+		
+		for(int i = 0; i <= nA; ++i)
+			rA[i].clear(), possiA[i] = -1;
+		for(int i = 0; i <= nB; ++i)
+			rB[i].clear(), possiB[i] = -1;
+		
+		for(int i = 0; i <= nA; ++i)
+			for(int j = 0; j < 26; ++j)
+				rA[nxtA[i][j]].push_back(i);
+		for(int i = 0; i <= nB; ++i)
+			for(int j = 0; j < 26; ++j)
+				rB[nxtB[i][j]].push_back(i);
+		
+		queue<int> q;
+		for(int i = 0; i <= nA; ++i)
+			if(accA[i]) q.push(i);
+		while(!q.empty())
+		{
+			int cur = q.front(); q.pop();
+			possiA[cur] = 1;
+			for(int j = 0; j < rA[cur].size(); ++j)
+			{
+				int y = rA[cur][j];
+				if(possiA[y] != -1) continue;
+				possiA[y] = 1;
+				q.push(y);
+			}
+		}
+		
+		for(int i = 0; i <= nB; ++i)
+			if(accB[i]) q.push(i);
+		while(!q.empty())
+		{
+			int cur = q.front(); q.pop();
+			possiB[cur] = 1;
+			for(int j = 0; j < rB[cur].size(); ++j)
+			{
+				int y = rB[cur][j];
+				if(possiB[y] != -1) continue;
+				possiB[y] = 1;
+				q.push(y);
+			}
+		}
+		
+		for(int i = 0; i <= nA; ++i)
+			vis[i].reset();
+			
+		q.push(0);
+		vis[0][0] = 1;
+		pre[0][0] = -1;
+		if(accA[0] && accB[0])
+		{
+			continue;
+			printf("\n");
+		}
+		bool succ = false;
+		int ansA, ansB;
+		while(!q.empty())
+		{
+			int cur = q.front(); q.pop();
+			int cA = cur >> 15; int cB = cur & ((1 << 15) - 1);
+			if(accA[cA] == accB[cB])
+			{
+				ansA = cA, ansB = cB;
+				succ = true;
+				break;
+			}
+			if(possiA[cA] == -1 || possiB[cB] == -1) continue;
+			for(int j = 0; j < 26; ++j)
+			{
+				int nxtcA = nxtA[cA][j], nxtcB = nxtB[cB][j];
+				//if(possiA[nxtcA] == -1 || possiB[nxtcB] == -1) continue;
+				if(vis[nxtcA][nxtcB]) continue;
+				vis[nxtcA][nxtcB] = 1;
+				pre[nxtcA][nxtcB] = (cA << 15) | cB;
+				q.push((nxtcA << 15) | nxtcB);
+			}
+		}
+		if(!succ)
+			printf("0\n");
+		else
+		{
+			vector<char> ans;
+			int cur = (ansA << 15) | ansB;
+			while(cur != -1)
+			{
+				int chr = -1;
+				int pA, pB, cA, cB;
+				cA = cur >> 15;
+				cB = (cur & ((1 << 15) - 1));
+				pA = pre[cur >> 15][cur & ((1 << 15) - 1)];
+				if(pA == -1) break;
+				pB = pA & ((1 << 15) - 1);
+				pA = pA >> 15;
+				for(int j = 0; j < 26; ++j)
+				{
+					if(nxtA[pA][j] == cA && nxtB[pB][j] == cB)
+					{
+						chr = j;
+						break;
+					}
+				}
+				ans.push_back(chr + 'a');
+				cur = (pA << 15) | pB;
+			}
+			for(int j = ans.size() - 1; j >= 0; --j)
+				putchar(ans[j]);
+			puts("");
+		}
+	}
+	return 0;
+}
