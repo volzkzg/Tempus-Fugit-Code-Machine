@@ -34,86 +34,85 @@
 \contentsline {subsection}{\numberline {2.11}Splay维护数列}{22}
 \contentsline {section}{\numberline {3}字符串相关}{24}
 \contentsline {subsection}{\numberline {3.1}Manacher}{24}
-\contentsline {subsection}{\numberline {3.2}KMP}{24}
-\contentsline {subsection}{\numberline {3.3}Aho-Corasick 自动机}{24}
-\contentsline {subsection}{\numberline {3.4}后缀自动机}{24}
-\contentsline {subsection}{\numberline {3.5}后缀数组-1}{25}
-\contentsline {subsection}{\numberline {3.6}后缀数组-2}{25}
-\contentsline {subsection}{\numberline {3.7}环串最小表示}{26}
-\contentsline {subsection}{\numberline {3.8}回文自动机}{26}
-\contentsline {section}{\numberline {4}图论}{27}
-\contentsline {subsection}{\numberline {4.1}Dominator Tree}{27}
-\contentsline {subsection}{\numberline {4.2}树 Hash}{28}
-\contentsline {subsection}{\numberline {4.3}带花树}{29}
-\contentsline {subsection}{\numberline {4.4}最大流}{30}
-\contentsline {subsection}{\numberline {4.5}最高标号预流推进}{30}
-\contentsline {subsection}{\numberline {4.6}有上下界的网络流}{31}
-\contentsline {subsection}{\numberline {4.7}无向图全局最小割}{31}
-\contentsline {subsection}{\numberline {4.8}KM}{31}
-\contentsline {subsection}{\numberline {4.9}双连通分量}{31}
-\contentsline {subsection}{\numberline {4.10}强连通分量}{32}
-\contentsline {subsection}{\numberline {4.11}2-SAT 与 Kosaraju}{32}
-\contentsline {subsection}{\numberline {4.12}全局最小割 Stoer-Wagner}{32}
-\contentsline {subsection}{\numberline {4.13}Hopcroft-Karp}{32}
-\contentsline {subsection}{\numberline {4.14}欧拉路}{33}
-\contentsline {subsection}{\numberline {4.15}稳定婚姻}{33}
-\contentsline {subsection}{\numberline {4.16}最大团搜索}{33}
-\contentsline {subsection}{\numberline {4.17}极大团计数}{33}
-\contentsline {subsection}{\numberline {4.18}最小树形图}{34}
-\contentsline {subsection}{\numberline {4.19}离线动态最小生成树}{35}
-\contentsline {subsection}{\numberline {4.20}弦图}{36}
-\contentsline {subsection}{\numberline {4.21}K短路(允许重复)}{36}
-\contentsline {subsection}{\numberline {4.22}K短路(不允许重复)}{37}
-\contentsline {subsection}{\numberline {4.23}小知识}{38}
-\contentsline {section}{\numberline {5}数学}{38}
-\contentsline {subsection}{\numberline {5.1}博弈论相关}{38}
-\contentsline {subsection}{\numberline {5.2}单纯形Cpp}{39}
-\contentsline {subsection}{\numberline {5.3}单纯形Java}{39}
-\contentsline {subsection}{\numberline {5.4}自适应辛普森}{40}
-\contentsline {subsection}{\numberline {5.5}高斯消元}{40}
-\contentsline {subsection}{\numberline {5.6}FFT}{40}
-\contentsline {subsection}{\numberline {5.7}整数FFT}{41}
-\contentsline {subsection}{\numberline {5.8}扩展欧几里得}{41}
-\contentsline {subsection}{\numberline {5.9}线性同余方程}{41}
-\contentsline {subsection}{\numberline {5.10}Miller-Rabin 素性测试}{41}
-\contentsline {subsection}{\numberline {5.11}PollardRho}{42}
-\contentsline {subsection}{\numberline {5.12}多项式求根}{42}
-\contentsline {subsection}{\numberline {5.13}线性递推}{42}
-\contentsline {subsection}{\numberline {5.14}原根}{43}
-\contentsline {subsection}{\numberline {5.15}离散对数}{43}
-\contentsline {subsection}{\numberline {5.16}平方剩余}{43}
-\contentsline {subsection}{\numberline {5.17}N次剩余}{44}
-\contentsline {subsection}{\numberline {5.18}Pell方程}{44}
-\contentsline {subsection}{\numberline {5.19}Romberg积分}{44}
-\contentsline {subsection}{\numberline {5.20}公式}{44}
-\contentsline {subsubsection}{\numberline {5.20.1}级数与三角}{44}
-\contentsline {subsubsection}{\numberline {5.20.2}三次方程求根公式}{45}
-\contentsline {subsubsection}{\numberline {5.20.3}椭圆}{45}
-\contentsline {subsubsection}{\numberline {5.20.4}抛物线}{46}
-\contentsline {subsubsection}{\numberline {5.20.5}重心}{46}
-\contentsline {subsubsection}{\numberline {5.20.6}向量恒等式}{46}
-\contentsline {subsubsection}{\numberline {5.20.7}常用几何公式}{46}
-\contentsline {subsubsection}{\numberline {5.20.8}树的计数}{46}
-\contentsline {subsection}{\numberline {5.21}小知识}{46}
-\contentsline {section}{\numberline {6}其他}{47}
-\contentsline {subsection}{\numberline {6.1}Extended LIS}{47}
-\contentsline {subsection}{\numberline {6.2}生成 nCk}{48}
-\contentsline {subsection}{\numberline {6.3}nextPermutation}{48}
-\contentsline {subsection}{\numberline {6.4}Josephus 数与逆 Josephus 数}{48}
-\contentsline {subsection}{\numberline {6.5}表达式求值}{48}
-\contentsline {subsection}{\numberline {6.6}曼哈顿最小生成树}{48}
-\contentsline {subsection}{\numberline {6.7}直线下的整点个数}{49}
-\contentsline {subsection}{\numberline {6.8}Java多项式}{49}
-\contentsline {subsection}{\numberline {6.9}long long 乘法取模}{49}
-\contentsline {subsection}{\numberline {6.10}重复覆盖}{50}
-\contentsline {subsection}{\numberline {6.11}星期几判定}{50}
-\contentsline {subsection}{\numberline {6.12}LCSequence Fast}{51}
-\contentsline {subsection}{\numberline {6.13}C Split}{51}
-\contentsline {subsection}{\numberline {6.14}builtin系列}{51}
-\contentsline {section}{\numberline {7}Templates}{51}
-\contentsline {subsection}{\numberline {7.1}泰勒级数}{51}
-\contentsline {subsection}{\numberline {7.2}积分表}{52}
-\contentsline {subsection}{\numberline {7.3}Eclipse配置}{54}
-\contentsline {subsection}{\numberline {7.4}C++}{54}
-\contentsline {subsection}{\numberline {7.5}Java}{54}
-\contentsline {subsection}{\numberline {7.6}gcc配置}{55}
+\contentsline {subsection}{\numberline {3.2}最大回文正方形}{24}
+\contentsline {subsection}{\numberline {3.3}KMP}{26}
+\contentsline {subsection}{\numberline {3.4}Aho-Corasick 自动机}{26}
+\contentsline {subsection}{\numberline {3.5}后缀自动机}{26}
+\contentsline {subsection}{\numberline {3.6}后缀数组-1}{26}
+\contentsline {subsection}{\numberline {3.7}后缀数组-2}{27}
+\contentsline {subsection}{\numberline {3.8}环串最小表示}{28}
+\contentsline {subsection}{\numberline {3.9}回文自动机}{28}
+\contentsline {section}{\numberline {4}图论}{28}
+\contentsline {subsection}{\numberline {4.1}Dominator Tree}{28}
+\contentsline {subsection}{\numberline {4.2}树 Hash}{29}
+\contentsline {subsection}{\numberline {4.3}带花树}{31}
+\contentsline {subsection}{\numberline {4.4}最大流}{31}
+\contentsline {subsection}{\numberline {4.5}最高标号预流推进}{32}
+\contentsline {subsection}{\numberline {4.6}KM}{32}
+\contentsline {subsection}{\numberline {4.7}双连通分量}{32}
+\contentsline {subsection}{\numberline {4.8}强连通分量}{33}
+\contentsline {subsection}{\numberline {4.9}2-SAT 与 Kosaraju}{34}
+\contentsline {subsection}{\numberline {4.10}全局最小割 Stoer-Wagner}{34}
+\contentsline {subsection}{\numberline {4.11}Hopcroft-Karp}{34}
+\contentsline {subsection}{\numberline {4.12}欧拉路}{34}
+\contentsline {subsection}{\numberline {4.13}稳定婚姻}{35}
+\contentsline {subsection}{\numberline {4.14}最大团搜索}{35}
+\contentsline {subsection}{\numberline {4.15}极大团计数}{35}
+\contentsline {subsection}{\numberline {4.16}最小树形图}{36}
+\contentsline {subsection}{\numberline {4.17}离线动态最小生成树}{37}
+\contentsline {subsection}{\numberline {4.18}弦图}{37}
+\contentsline {subsection}{\numberline {4.19}K短路(允许重复)}{38}
+\contentsline {subsection}{\numberline {4.20}K短路(不允许重复)}{39}
+\contentsline {subsection}{\numberline {4.21}小知识}{39}
+\contentsline {section}{\numberline {5}数学}{40}
+\contentsline {subsection}{\numberline {5.1}博弈论相关}{40}
+\contentsline {subsection}{\numberline {5.2}单纯形Cpp}{40}
+\contentsline {subsection}{\numberline {5.3}单纯形Java}{41}
+\contentsline {subsection}{\numberline {5.4}自适应辛普森}{41}
+\contentsline {subsection}{\numberline {5.5}高斯消元}{42}
+\contentsline {subsection}{\numberline {5.6}FFT}{42}
+\contentsline {subsection}{\numberline {5.7}整数FFT}{42}
+\contentsline {subsection}{\numberline {5.8}扩展欧几里得}{43}
+\contentsline {subsection}{\numberline {5.9}线性同余方程}{43}
+\contentsline {subsection}{\numberline {5.10}Miller-Rabin 素性测试}{43}
+\contentsline {subsection}{\numberline {5.11}PollardRho}{43}
+\contentsline {subsection}{\numberline {5.12}多项式求根}{44}
+\contentsline {subsection}{\numberline {5.13}线性递推}{44}
+\contentsline {subsection}{\numberline {5.14}原根}{44}
+\contentsline {subsection}{\numberline {5.15}离散对数}{45}
+\contentsline {subsection}{\numberline {5.16}平方剩余}{45}
+\contentsline {subsection}{\numberline {5.17}N次剩余}{45}
+\contentsline {subsection}{\numberline {5.18}Pell方程}{45}
+\contentsline {subsection}{\numberline {5.19}Romberg积分}{46}
+\contentsline {subsection}{\numberline {5.20}公式}{46}
+\contentsline {subsubsection}{\numberline {5.20.1}级数与三角}{46}
+\contentsline {subsubsection}{\numberline {5.20.2}三次方程求根公式}{47}
+\contentsline {subsubsection}{\numberline {5.20.3}椭圆}{47}
+\contentsline {subsubsection}{\numberline {5.20.4}抛物线}{47}
+\contentsline {subsubsection}{\numberline {5.20.5}重心}{47}
+\contentsline {subsubsection}{\numberline {5.20.6}向量恒等式}{47}
+\contentsline {subsubsection}{\numberline {5.20.7}常用几何公式}{48}
+\contentsline {subsubsection}{\numberline {5.20.8}树的计数}{48}
+\contentsline {subsection}{\numberline {5.21}小知识}{48}
+\contentsline {section}{\numberline {6}其他}{49}
+\contentsline {subsection}{\numberline {6.1}Extended LIS}{49}
+\contentsline {subsection}{\numberline {6.2}生成 nCk}{49}
+\contentsline {subsection}{\numberline {6.3}nextPermutation}{49}
+\contentsline {subsection}{\numberline {6.4}Josephus 数与逆 Josephus 数}{49}
+\contentsline {subsection}{\numberline {6.5}表达式求值}{50}
+\contentsline {subsection}{\numberline {6.6}曼哈顿最小生成树}{50}
+\contentsline {subsection}{\numberline {6.7}直线下的整点个数}{51}
+\contentsline {subsection}{\numberline {6.8}Java多项式}{51}
+\contentsline {subsection}{\numberline {6.9}long long 乘法取模}{51}
+\contentsline {subsection}{\numberline {6.10}重复覆盖}{51}
+\contentsline {subsection}{\numberline {6.11}星期几判定}{52}
+\contentsline {subsection}{\numberline {6.12}LCSequence Fast}{52}
+\contentsline {subsection}{\numberline {6.13}C Split}{52}
+\contentsline {subsection}{\numberline {6.14}builtin系列}{53}
+\contentsline {section}{\numberline {7}Templates}{53}
+\contentsline {subsection}{\numberline {7.1}泰勒级数}{53}
+\contentsline {subsection}{\numberline {7.2}积分表}{53}
+\contentsline {subsection}{\numberline {7.3}Eclipse配置}{56}
+\contentsline {subsection}{\numberline {7.4}C++}{56}
+\contentsline {subsection}{\numberline {7.5}Java}{56}
+\contentsline {subsection}{\numberline {7.6}gcc配置}{56}
