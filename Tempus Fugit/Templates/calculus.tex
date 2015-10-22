@@ -1,0 +1,138 @@
+\def\du\dx{{ \cfrac{ \text{d}u }{ \text{d}x } }}
+\def\d{{ \text{d} }}
+\def\dx{{ \d x}}
+\def\du{{ \d u }}
+\def\dv{{ \d v }}
+
+\def\sech{{ \mathop{\text{sech}} }}
+\def\csch{{ \mathop{\text{csch}} }}
+
+\def\arcsin{{ \mathop{\text{arcsin}} }}
+\def\arccos{{ \mathop{\text{arccos}} }}
+\def\arctan{{ \mathop{\text{arctan}} }}
+\def\arccot{{ \mathop{\text{arccot}} }}
+\def\arcsec{{ \mathop{\text{arcsec}} }}
+\def\arccsc{{ \mathop{\text{arccsc}} }}
+
+\def\arcsinh{{ \mathop{\text{arcsinh}} }}
+\def\arccosh{{ \mathop{\text{arccosh}} }}
+\def\arctanh{{ \mathop{\text{arctanh}} }}
+\def\arccoth{{ \mathop{\text{arccoth}} }}
+\def\arcsech{{ \mathop{\text{arcsech}} }}
+\def\arccsch{{ \mathop{\text{arccsch}} }}
+
+\begin{itemize}
+\item $ \displaystyle \d(\tan x) = \sec^2 x \dx $
+\item $ \displaystyle \d(\cot x) = \csc^2 x \dx $
+\item $ \displaystyle \d(\sec x) = \tan x \, \sec x \dx $
+\item $ \displaystyle \d(\csc x) = -\cot x \, \csc x \dx $
+\item $ \displaystyle d(\arcsin x) = \cfrac{1}{\sqrt{1 - x^2}} \dx $
+\item $ \displaystyle d(\arccos x) = \cfrac{-1}{\sqrt{1 - x^2}} \dx $
+\item $ \displaystyle d(\arctan x) = \cfrac{1}{1 + x^2} \dx $
+\item $ \displaystyle d(\arccot x) = \cfrac{-1}{1 + x^2} \dx $
+\item $ \displaystyle d(\arcsec x) = \cfrac{1}{x \sqrt{1 - x^2}}\dx $
+\item $ \displaystyle d(\arccsc x) = \cfrac{-1}{u \sqrt{1 - x^2}}\dx $
+\end{itemize}
+
+\begin{itemize}
+\item $ \displaystyle \int c u \,\dx = c \int u \,\dx$
+\item $ \displaystyle \int (u + v) \,\dx = \int u \,\dx + \int v \,\dx$
+\item $ \displaystyle \int x^n \,\dx = \cfrac{1}{n + 1}x^{n+1}, \quad n \neq -1$
+\item $ \displaystyle \int \cfrac{1}{x}\dx = \ln x$
+\item $ \displaystyle \int e^x \,\dx = e^x$
+\item $ \displaystyle \int \cfrac{\dx}{1 + x ^ 2} = \arctan x$
+\item $ \displaystyle \int u \cfrac{\dv}{\dx} \dx = uv - \int v \cfrac{\du}{\dx} \dx$
+\item $ \displaystyle \int \sin x \,\dx = -\cos x$
+\item $ \displaystyle \int \cos x \,\dx = \sin x$
+\item $ \displaystyle \int \tan x \,\dx = -\ln \vert \cos x \vert$
+\item $ \displaystyle \int \cot x \,\dx = \ln \vert \cos x \vert$
+\item $ \displaystyle \int \sec x \,\dx = \ln \vert \sec x + \tan x \vert$
+\item $ \displaystyle \int \csc x \,\dx = \ln \vert \csc x + \cot x \vert$
+\item $ \displaystyle \int \arcsin \cfrac{x}{a} \dx = \arcsin \cfrac{x}{a} + \sqrt{a^2 - x^2}, \quad \hbox{$a > 0$}$
+\item $ \displaystyle \int \arccos \cfrac{x}{a} \dx = \arccos \cfrac{x}{a} - \sqrt{a^2 - x^2}, \quad \hbox{$a > 0$}$
+\item $ \displaystyle \int \arctan \cfrac{x}{a} \dx = x \arctan \cfrac{x}{a} - \cfrac{a}{2} \ln(a^2 + x^2), \quad \hbox{$a > 0$}$
+\item $ \displaystyle \int \sin^2 (a x) \dx = \cfrac{1}{2a} \big(ax - \sin(ax) \cos(ax)\big)$
+\item $ \displaystyle \int \cos^2 (a x) \dx = \cfrac{1}{2a} \big(ax + \sin(ax) \cos(ax)\big)$
+\item $ \displaystyle \int \sec^2 x \, \dx = \tan x$
+\item $ \displaystyle \int \csc^2 x \, \dx = - \cot x$
+\item $ \displaystyle \int \sin^n x \, \dx = -\cfrac{\sin^{n-1} x \cos x}{n} + \cfrac{n-1}{n}\int \sin^{n-2} x \, \dx$
+\item $ \displaystyle \int \cos^n x \, \dx = \cfrac{\cos^{n-1} x \sin x}{n} + \cfrac{n-1}{n}\int \cos^{n-2} x \, \dx$
+\item $ \displaystyle \int \tan^n x \, \dx = \cfrac{\tan^{n-1} x }{n - 1} - \int \tan^{n-2} x \, \dx,\quad n \neq 1$
+\item $ \displaystyle \int \cot^n x \, \dx = -\cfrac{\cot^{n-1} x}{n - 1} - \int \cot^{n-2} x \, \dx,\quad n \neq 1$
+\item $ \displaystyle \int \sec^n x \, \dx = \cfrac{\tan x\sec^{n-1} x}{n - 1} + \cfrac{n-2}{n-1}\int \sec^{n-2} x \, \dx,\quad n \neq 1$
+\item $ \displaystyle \int \csc^n x \, \dx = -\cfrac{\cot x\csc^{n-1} x}{n - 1} + \cfrac{n-2}{n-1}\int \csc^{n-2} x \, \dx,\quad n \neq 1$
+\item $ \displaystyle \int \sinh x \, \dx = \cosh x$
+\item $ \displaystyle \int \cosh x \, \dx = \sinh x$
+\item $ \displaystyle \int \tanh x \, \dx = \ln \vert \cosh x \vert$
+\item $ \displaystyle \int \coth x \, \dx = \ln \vert \sinh x \vert$
+\item $ \displaystyle \int \sech x \, \dx = \arctan \sinh x $
+\item $ \displaystyle \int \csch x \, \dx = \ln\left\vert\tanh \cfrac{x}{2} \right\vert$
+\item $ \displaystyle \int \sinh^2 x \, \dx = \cfrac{1}{4} \sinh (2x) - \cfrac{1}{2} x$
+\item $ \displaystyle \int \cosh^2 x \, \dx = \cfrac{1}{4} \sinh (2x) + \cfrac{1}{2} x$
+\item $ \displaystyle \int \sech^2 x \, \dx = \tanh x$
+\item $ \displaystyle \int \arcsinh \cfrac{x}{a} \dx = x \arcsinh \cfrac{x}{a} - \sqrt{x^2 + a^2},\quad a > 0$
+\item $ \displaystyle \int \arctanh \cfrac{x}{a} \dx = x \arctanh \cfrac{x}{a} + \cfrac{a}{2} \ln\vert a^2 - x^2\vert$
+\item $ \displaystyle \int \arccosh \cfrac{x}{a} \dx = 
+  \begin{cases}
+  \displaystyle x \arccosh \cfrac{x}{a} - \sqrt{x^2 + a^2}, \text{if $\arccosh \cfrac{x}{a} > 0$ and $a > 0$} \\
+  \displaystyle x \arccosh \cfrac{x}{a} + \sqrt{x^2 + a^2}, \text{if $\arccosh \cfrac{x}{a} < 0$ and $a > 0$}
+  \end{cases} $
+
+\item $ \displaystyle \int \cfrac{\dx}{\sqrt{a^2 + x^2}}= \ln \left(x + \sqrt{a^2 + x^2}\right),\quad a > 0 $
+\item $ \displaystyle \int \cfrac{\dx}{a^2 + x^2}= \cfrac{1}{a} \arctan \cfrac{x}{a} ,\quad a > 0 $
+\item $ \displaystyle \int \sqrt{a^2 - x^2} \, \dx = \cfrac{x}{2} \sqrt{a^2 - x^2} + \cfrac{a^2}{2} \arcsin \cfrac{x}{a} ,\quad a > 0 $
+\item $ \displaystyle \int (a^2 - x^2)^{3/2} \dx = \cfrac{x}{8} (5a^2 - 2x^2)\sqrt{a^2 - x^2} + \cfrac{3a^4}{8} \arcsin \cfrac{x}{a} ,\quad a > 0 $
+\item $ \displaystyle \int \cfrac{\dx}{\sqrt{a^2 - x^2}} = \arcsin \cfrac{x}{a} ,\quad a > 0 $
+\item $ \displaystyle \int \cfrac{\dx}{a^2 - x^2} = \cfrac{1}{2a} \ln\left\vert \cfrac{a + x}{a - x}\right\vert $
+\item $ \displaystyle \int \cfrac{\dx}{(a^2 - x^2)^{3/2}} = \cfrac{x}{a^2\sqrt{a^2 - x^2}} $
+\item $ \displaystyle \int \sqrt{a^2 \pm x^2} \, \dx = \cfrac{x}{2} \sqrt{a^2 \pm x^2} \pm \cfrac{a^2}{2} \ln\left\vert x + \sqrt{a^2 \pm x^2}\right\vert $
+\item $ \displaystyle \int \cfrac{\dx}{\sqrt{x^2 - a^2}}= \ln\left\vert x + \sqrt{x^2 - a^2}\right\vert, \quad a > 0 $
+\item $ \displaystyle \int \cfrac{\dx}{a x^2 + b x}= \cfrac{1}{a} \ln\left\vert\cfrac{x}{a + bx}\right\vert $
+\item $ \displaystyle \int x \sqrt{a + b x} \, \dx= \cfrac{2(3bx - 2a)(a + bx)^{3/2}}{15 b^2} $
+\item $ \displaystyle \int \cfrac{\sqrt{a + b x}}{x} \, \dx= 2\sqrt{a + b x} + a \int \cfrac{1}{x \sqrt{a + b x}} \dx $
+\item $ \displaystyle \int \cfrac{x}{\sqrt{a + b x}} \, \dx= \cfrac{1}{\sqrt{2}} \ln\left\vert\cfrac{\sqrt{a + b x} - \sqrt{a}}{\sqrt{a + b x} + \sqrt{a}}\right\vert, \quad a > 0 $
+\item $ \displaystyle \int \cfrac{\sqrt{a^2 - x^2}}{x} \, \dx = \sqrt{a^2 - x^2} - a \ln\left\vert\cfrac{a + \sqrt{a^2 - x^2}}{x}\right\vert $
+\item $ \displaystyle \int x \sqrt{a^2 - x^2} \, \dx = - \cfrac{1}{3} (a^2 - x^2)^{3/2} $
+\item $ \displaystyle \int x^2 \sqrt{a^2 - x^2} \, \dx = \cfrac{x}{8} (2x^2 - a^2)\sqrt{a^2 - x^2} + \cfrac{a^4}{8} \arcsin \cfrac{x}{a} , \quad a > 0 $
+\item $ \displaystyle \int \cfrac{\dx}{\sqrt{a^2 - x^2}}= - \cfrac{1}{a} \ln\left\vert\cfrac{a + \sqrt{a^2 - x^2}}{x}\right\vert $
+\item $ \displaystyle \int \cfrac{x \, \dx}{\sqrt{a^2 - x^2}} = - \sqrt{a^2 - x^2} $
+\item $ \displaystyle \int \cfrac{x^2 \, \dx}{\sqrt{a^2 - x^2}} = - \cfrac{x}{2} \sqrt{a^2 - x^2} + \cfrac{a^2}{2} \arcsin \cfrac{x}{a}, \quad a > 0 $
+\item $ \displaystyle \int \cfrac{\sqrt{a^2 + x^2}}{x} \, \dx = \sqrt{a^2 + x^2} - a \ln\left\vert\cfrac{a + \sqrt{a^2 + x^2}}{x}\right\vert $
+\item $ \displaystyle \int \cfrac{\sqrt{x^2 - a^2}}{x} \, \dx = \sqrt{x^2 - a^2} - a \arccos \cfrac{a}{\vert x\vert} ,\quad a > 0 $
+\item $ \displaystyle \int x \sqrt{x^2 \pm a^2} \, \dx = \cfrac{1}{3} (x^2 \pm a^2)^{3/2} $
+\item $ \displaystyle \int \cfrac{\dx}{x \sqrt{x^2 + a^2}} = \cfrac{1}{a} \ln \left\vert\cfrac{x}{a + \sqrt{a^2 + x^2}}\right\vert $
+
+\item $ \displaystyle \int \cfrac{\dx}{x \sqrt{x^2 - a^2}} = \cfrac{1}{a} \arccos \cfrac{a}{\vert x\vert} ,\quad a > 0 $
+\item $ \displaystyle \int \cfrac{\dx}{x^2 \sqrt{x^2 \pm a^2}} = \mp \cfrac{\sqrt{x^2 \pm a^2}}{a^2 x} $
+\item $ \displaystyle \int \cfrac{x \, \dx}{\sqrt{x^2 \pm a^2}} = \sqrt{x^2 \pm a^2} $
+\item $ \displaystyle \int \cfrac{\sqrt{x^2 \pm a^2}}{x^4} \, \dx = \mp \cfrac{(x^2 + a^2)^{3/2}}{3a^2 x^3} $
+\item $ \displaystyle \int \cfrac{\dx}{a x^2  + bx + c} = 
+  \begin{cases}
+  \displaystyle \cfrac{1}{\sqrt{b^2 -4ac}} \ln \left\vert\cfrac{ 2ax + b - \sqrt{b^2 -4ac}}{2ax + b + \sqrt{b^2 -4ac}}\right\vert, \text{if $b^2 > 4ac$} \\
+  \displaystyle \cfrac{2}{\sqrt{4ac - b^2}} \arctan \cfrac{ 2ax + b }{\sqrt{4ac - b^2}}, \text{if $b^2 < 4ac$}
+  \end{cases}
+$
+\item $ \displaystyle \int \cfrac{\dx}{\sqrt{a x^2  + bx + c}}  =
+  \begin{cases}
+  \displaystyle \cfrac{1}{\sqrt{a}} \ln \left\vert 2ax + b + 2\sqrt{a} \sqrt{ax^2 + bx + c}\right\vert, \text{if $a > 0$} \\
+  \displaystyle \cfrac{1}{\sqrt{- a}} \arcsin \cfrac{-2ax - b}{\sqrt{b^2 - 4ac}}, \text{if $a < 0$}
+  \end{cases}
+$
+
+\item $ \displaystyle \int \sqrt{a x^2  + bx + c} \, \dx = \cfrac{2ax + b}{4a} \sqrt{a x^2  + bx + c} + \cfrac{4ax - b^2}{8a} \int \cfrac{\dx}{\sqrt{a x^2  + bx + c}} $
+\item $ \displaystyle \int \cfrac{x \, \dx}{ \sqrt{a x^2  + bx + c}} = \cfrac{\sqrt{a x^2  + bx + c} }{ a} - \cfrac{b }{ 2a} \int \cfrac{\dx }{ \sqrt{a x^2  + bx + c}} $
+\item $ \displaystyle \int \cfrac{\dx }{ x \sqrt{a x^2  + bx + c}} =
+  \begin{cases}
+  \displaystyle \cfrac{-1}{ \sqrt{c}} \ln \left\vert\cfrac{2\sqrt{c} \sqrt{ax^2 + bx + c} + bx + 2c }{ x}\right\vert, \text{if $c > 0$} \\
+  \displaystyle \cfrac{1 }{ \sqrt{- c}} \arcsin \cfrac{bx + 2c }{ \vert x \vert\sqrt{b^2 - 4ac}}, \text{if $c < 0$}
+  \end{cases}
+$
+\item $ \displaystyle \int x^3  \sqrt{x^2 + a^2} \, \dx = (\cfrac{1}{3} x^2 - \cfrac{2}{15} a^2)(x^2 + a^2)^{3/2} $
+\item $ \displaystyle \int x^n \sin (ax) \, \dx = - \cfrac{1}{a} x^n \cos (ax) + \cfrac{n}{a} \int x^{n-1} \cos (ax) \, \dx $
+\item $ \displaystyle \int x^n \cos (ax) \, \dx = \cfrac{1}{a} x^n \sin (ax) - \cfrac{n}{a} \int x^{n-1} \sin (ax) \, \dx $
+\item $ \displaystyle \int x^n e^{ax} \, \dx = \cfrac{x^n e^{ax}}{a} - \cfrac{n}{a} \int x^{n-1} e^{ax} \, \dx $
+\item $ \displaystyle \int x^n \ln (ax) \, \dx = x^{n+1}\left(\cfrac{\ln (ax) }{ n+1} - \cfrac{1 }{ (n+1)^2}\right) $
+\item $ \displaystyle \int x^n (\ln ax)^m \, \dx = \cfrac{x^{n+1}}{n+1}(\ln ax)^m - \cfrac{m}{n+1}\int x^n (\ln ax)^{m-1} \, \dx $
+
+\end{itemize}
+
