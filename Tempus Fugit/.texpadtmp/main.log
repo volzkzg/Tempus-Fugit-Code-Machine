@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  22 OCT 2015 19:41
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.10.1)  9 NOV 2015 23:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1081,12 +1081,12 @@ File: xeCJK.cfg 2015/05/15 v3.3.2 Configuration file for xeCJK package
 .................................................
 . fontspec info: "defining-font"
 . 
-. Font family 'Monaco(0)' created for font 'Monaco' with options [Scale=1.00].
+. Font family 'Monaco(0)' created for font 'Monaco' with options [Scale=0.70].
 . 
 . This font family consists of the following shapes:
 . 
 . * 'normal' with NFSS spec.:
-. <->s*[1.00]"Monaco/AAT:"
+. <->s*[0.70]"Monaco/AAT:"
 . 
 . * 'small caps' with NFSS spec.:
 . 
@@ -1238,101 +1238,83 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `main.toc'.
 
 LaTeX Font Info:    Font shape `EU1/Monaco(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 74.
- (./Computational Geometry/2D_Geometry_Base.cpp
-Underfull \vbox (badness 3989) has occurred while \output is active []
-
- [2]
+(Font)              scaled to size 5.59998pt on input line 74.
+ (./Computational Geometry/2D_Geometry_Base.cpp [2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3]
+ [3]) (./Computational Geometry/2D_Geometry_Base.cpp
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) (./Computational Geometry/2D_Geometry_Base.cpp [4]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) (./Computational Geometry/CircleKCover.cpp [6]) (./Computational Geometry/Polygon.cpp
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7]) (./Computational Geometry/isPL.cpp) (./Computational Geometry/Half Plane Intersection.cpp) (./Computational Geometry/Max Area Empty Convex Hull.cpp [8]) (./Computational Geometry/ClosestPair.cpp) (./Computational Geometry/Convex Hull && Convex Diameter.cpp) (./Computational Geometry/Farmland.cpp [9]) (./Computational Geometry/Voronoi.cpp
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) (./Computational Geometry/Fermat Point Of A Quadrilateral.cpp [11]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) (./Computational Geometry/3D_Geometry_Base.cpp [12]) (./Computational Geometry/3D Convex Cut.cpp) (./Computational Geometry/3D Convex Hull.cpp [13]) (./Computational Geometry/DistOnBall.cpp) (./Computational Geometry/DistOnCuboid.cpp) (./Computational Geometry/MinBall.cpp [14])
-Underfull \vbox (badness 2253) has occurred while \output is active []
-
- (./Data Structure/Dynamic Convex Hull (Insertion Only).cpp) (./Data Structure/Usage Of Rope.cpp) [15] (./Data Structure/Treap.cpp) (./Data Structure/Functional Treap.cpp) (./Data Structure/Leftist Heap.cpp) (./Data Structure/Link Cut Tree.cpp [16]) (./Data Structure/KDTree.cpp
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17]) (./Data Structure/KDTree_2.cpp) (./Data Structure/kd-tree.cpp [18]
+ [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19]) (./Data Structure/HeavyLightTree.cpp
+ [5]) (./Computational Geometry/CircleKCover.cpp) (./Computational Geometry/Polygon.cpp [6]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20]
+) (./Computational Geometry/isPL.cpp) [7] (./Computational Geometry/Half Plane Intersection.cpp) (./Computational Geometry/Max Area Empty Convex Hull.cpp) (./Computational Geometry/ClosestPair.cpp) [8] (./Computational Geometry/Convex Hull && Convex Diameter.cpp) (./Computational Geometry/Farmland.cpp) (./Computational Geometry/Voronoi.cpp
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-)
+ [9]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21] (./Data Structure/Splay_Array.cpp
+) (./Computational Geometry/Fermat Point Of A Quadrilateral.cpp [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [22]
+) (./Computational Geometry/3D_Geometry_Base.cpp [11]) (./Computational Geometry/3D Convex Cut.cpp) (./Computational Geometry/3D Convex Hull.cpp [12]) (./Computational Geometry/DistOnBall.cpp) (./Computational Geometry/DistOnCuboid.cpp) (./Computational Geometry/MinBall.cpp [13]) (./Data Structure/Dynamic Convex Hull (Insertion Only).cpp) (./Data Structure/Usage Of Rope.cpp) (./Data Structure/Treap.cpp [14]) (./Data Structure/Functional Treap.cpp) (./Data Structure/Leftist Heap.cpp) (./Data Structure/Link Cut Tree.cpp [15]) (./Data Structure/KDTree.cpp) (./Data Structure/KDTree_2.cpp [16]) (./Data Structure/kd-tree.cpp
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23]) (./String Related/Manacher.cpp) (./String Related/Palindrome_Square.cpp [24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [25]) (./String Related/KMP.cpp) (./String Related/Aho Corasick Automaton.cpp) (./String Related/Suffix Automaton.cpp) (./String Related/Suffix Array Backup.cpp [26])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- (./String Related/Suffix Array.cpp) [27] (./String Related/Minimial Representation Of A Cyclic String.cpp) (./String Related/PA.cpp) (./Graph Theory/DominatorTree.cpp [28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) (./Graph Theory/TreeHash.cpp [29]
+) (./Data Structure/HeavyLightTree.cpp [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [30]) (./Graph Theory/Blossom Algorithm.cpp) (./Graph Theory/Maxflow.cpp [31]) (./Graph Theory/Highest Level Preflow-Push.cpp) (./Graph Theory/KM.cpp) (./Graph Theory/BCC.cpp [32]
+ [19]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) (./Graph Theory/SCC.cpp [33]) (./Graph Theory/TwoSat SCC.cpp) (./Graph Theory/Stoer-Wagner.cpp) (./Graph Theory/HopcroftKarp.cpp) (./Graph Theory/EulerianWalk.cpp [34]) (./Graph Theory/StableMatching.cpp) (./Graph Theory/MaxClique.cpp) (./Graph Theory/MaxCliqueCounting.cpp
+) (./Data Structure/Splay_Array.cpp [20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35]) (./Graph Theory/Minimum Optimum branchings.cpp)
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [36] (./Graph Theory/Dynamic MST(Offline).cpp) (./Graph Theory/MCS.cpp [37]) (./Graph Theory/K-shortest Path (Repeat is allowed).cpp
+ [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38]) (./Graph Theory/K-shortest Path (Repeat is not allowed).cpp) [39]
+) (./String Related/Manacher.cpp [22]) (./String Related/Palindrome_Square.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) (./String Related/KMP.cpp) (./String Related/Aho Corasick Automaton.cpp) (./String Related/Suffix Automaton.cpp [24]) (./String Related/Suffix Array Backup.cpp) (./String Related/Suffix Array.cpp [25]) (./String Related/Minimial Representation Of A Cyclic String.cpp) (./String Related/PA.cpp
+Underfull \vbox (badness 2142) has occurred while \output is active []
+
+ [26]) (./Graph Theory/DominatorTree.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27]) (./Graph Theory/TreeHash.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) (./Graph Theory/Blossom Algorithm.cpp [29]) (./Graph Theory/Maxflow.cpp) (./Graph Theory/Highest Level Preflow-Push.cpp) (./Graph Theory/KM.cpp [30]) (./Graph Theory/BCC.cpp) (./Graph Theory/SCC.cpp [31]) (./Graph Theory/TwoSat SCC.cpp) (./Graph Theory/Stoer-Wagner.cpp) (./Graph Theory/HopcroftKarp.cpp [32]) (./Graph Theory/EulerianWalk.cpp) (./Graph Theory/StableMatching.cpp) (./Graph Theory/MaxClique.cpp) (./Graph Theory/MaxCliqueCounting.cpp [33]) (./Graph Theory/Minimum Optimum branchings.cpp) (./Graph Theory/Dynamic MST(Offline).cpp [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) (./Graph Theory/MCS.cpp [35]) (./Graph Theory/K-shortest Path (Repeat is allowed).cpp) (./Graph Theory/K-shortest Path (Repeat is not allowed).cpp [36])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 375--380
 
  []
@@ -1352,7 +1334,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 386--394
 
  []
 
-
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 394--397
 
  []
@@ -1377,12 +1359,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 415--420
 
  []
 
-(./Math/SimplexCpp.cpp [40]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+(./Math/SimplexCpp.cpp [38]) (/usr/local/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
-) (./Math/SimplexJava.java) (./Math/AdaptiveSimpson.cpp [41]) (./Math/GaussElimination.cpp) (./Math/FFT.cpp) (./Math/FFT_Integer.cpp [42]) (./Math/ExGcd.cpp) (./Math/MillerRabin.cpp) (./Math/PollardRho.cpp [43]) (./Math/Root Of Polynomial.cpp) (./Math/Linear Recursive Equation.cpp) (./Math/PrimitiveRoot.cpp [44]) (./Math/ModLog.cpp) (./Math/QuadraticResidue.cpp) (./Math/Nth Residue.cpp) (./Math/Pell.cpp [45]) (./Math/Romberg.cpp) [46]
+) (./Math/SimplexJava.java) (./Math/AdaptiveSimpson.cpp) (./Math/GaussElimination.cpp) (./Math/FFT.cpp [39]) (./Math/FFT_Integer.cpp) (./Math/ExGcd.cpp) (./Math/MillerRabin.cpp [40]) (./Math/PollardRho.cpp) (./Math/Root Of Polynomial.cpp) (./Math/Linear Recursive Equation.cpp [41]) (./Math/PrimitiveRoot.cpp) (./Math/ModLog.cpp) (./Math/QuadraticResidue.cpp [42]) (./Math/Nth Residue.cpp) (./Math/Pell.cpp) (./Math/Romberg.cpp) [43]
 Underfull \hbox (badness 3612) in paragraph at lines 641--646
 []$\OML/cmm/m/it/8 x \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 x\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 ; y \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 y\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 ; t \OMS/cmsy/m/n/8 2 \OT1/cmr/m/n/8 [\OML/cmm/m/it/8 T[]; T[]\OT1/cmr/m/n/8 ]$\EU1/lmr/m/n/8 , $[] \OMS/cmsy/m/n/8 j\OML/cmm/m/it/8 y\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 x[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )\OMS/cmsy/m/n/8 j[]\OML/cmm/m/it/8 t$\EU1/lmr/m/n/8 , $[] [][]\OML/cmm/m/it/8 t$\EU1/lmr/m/n/8 , $\OML/cmm/m/it/8 ^^Y [] \OMS/cmsy/m/n/8 j\OML/cmm/m/it/8 x[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )\OMS/cmsy/m/n/8 j\OML/cmm/m/it/8 y[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 t\OT1/cmr/m/n/8 )[]\OML/cmm/m/it/8 t$\EU1/lmr/m/n/8 ,
  []
@@ -1392,26 +1371,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 647--652
 []$\OML/cmm/m/it/8 r \OT1/cmr/m/n/8 = \OML/cmm/m/it/8 r\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 ^^R\OT1/cmr/m/n/8 )\OML/cmm/m/it/8 ; ^^R \OMS/cmsy/m/n/8 2 \OT1/cmr/m/n/8 [\OML/cmm/m/it/8 ^^K; ^^L\OT1/cmr/m/n/8 ]$\EU1/lmr/m/n/8 , $[] [] \OML/cmm/m/it/8 r[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 ^^R\OT1/cmr/m/n/8 )[]\OML/cmm/m/it/8 ^^R$\EU1/lmr/m/n/8 , $[] [][]\OML/cmm/m/it/8 ^^R$\EU1/lmr/m/n/8 , $[]\OML/cmm/m/it/8 ^^Y [] r[]\OT1/cmr/m/n/8 (\OML/cmm/m/it/8 ^^R\OT1/cmr/m/n/8 ) [] \OML/cmm/m/it/8 ^^R[]^^R$\EU1/lmr/m/n/8 ,
  []
 
-[47] [48] (./Others/K Disjoint LIS.cpp) (./Others/next nCk.cpp) (./Others/nextPermutation.java) (./Others/Josephus.cpp) [49] (./Others/Expression Evaluation.cpp) (./Others/Manhattan MST.cpp
+[44] [45] (./Others/K Disjoint LIS.cpp [46]) (./Others/next nCk.cpp) (./Others/nextPermutation.java) (./Others/Josephus.cpp) (./Others/Expression Evaluation.cpp) (./Others/Manhattan MST.cpp [47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]) (./Others/DotsBelowLine.cpp) (./Others/Java Polynomial.java) (./Others/Long Long Multi and Mod.cpp) (./Others/Multiple Cover - Full.cpp [51]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-) (./Others/Zeller.cpp) (./Others/LCSFast.cpp) (./Others/C Split.cpp) [52] (./Templates/series.tex
+) (./Others/DotsBelowLine.cpp) (./Others/Java Polynomial.java) [48] (./Others/Long Long Multi and Mod.cpp) (./Others/Multiple Cover - Full.cpp) (./Others/Zeller.cpp) [49] (./Others/LCSFast.cpp) (./Others/C Split.cpp) (./Templates/series.tex
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
 (amsmath)                 on input line 51.
 
-) (./Templates/calculus.tex [53] [54] [55]) (./Templates/cpp_template.cpp) (./Templates/java_template.java) [56] (/Users/bluesnap/Documents/School_Work/2015-9/ACM/Tempus-Fugit-Code-Machine/Tempus Fugit/.texpadtmp/main.aux) ) 
+) (./Templates/calculus.tex [50] [51] [52]) (./Templates/cpp_template.cpp) (./Templates/java_template.java [53]) [54
+
+] (/Users/bluesnap/Documents/School_Work/2015-9/ACM/Tempus-Fugit-Code-Machine/Tempus Fugit/.texpadtmp/main.aux) ) 
 Here is how much of TeX's memory you used:
  23783 strings out of 493706
  454037 string characters out of 6145769
- 1113624 words of memory out of 5000000
+ 1135632 words of memory out of 5000000
  26617 multiletter control sequences out of 15000+600000
  10827 words of font info for 64 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 56i,16n,120p,10373b,1690s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,120p,10373b,1695s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/bluesnap/Documents/School_Work/2015-9/ACM/Tempus-Fugit-Code-Machine/Tempus Fugit/.texpadtmp/main.pdf (56 pages).
+Output written on /Users/bluesnap/Documents/School_Work/2015-9/ACM/Tempus-Fugit-Code-Machine/Tempus Fugit/.texpadtmp/main.pdf (54 pages).
