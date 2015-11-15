@@ -1,0 +1,647 @@
+\documentclass[landscape, twocolumn, 8pt, a4paper, twoside]{extarticle}
+
+
+
+\usepackage{mathrsfs} %支持花体字母
+\usepackage{bm, amsmath, amsthm, graphicx, amsfonts, fancyhdr, ctable, pict2e, multirow, rotating, geometry, listings, color, fontspec, geometry}
+\usepackage{xeCJK}
+\geometry{left=0.5cm, right=0.5cm, top=1.5cm, bottom=1.5cm}
+\setCJKmainfont{PingFangSC-Light}
+\newfontfamily{\lstsansserif}[Scale=0.70]{Monaco}
+
+\definecolor{base03}{RGB}{0,43,54}
+\definecolor{base02}{RGB}{7,54,66}
+\definecolor{base01}{RGB}{88,110,117}
+\definecolor{base00}{RGB}{101,123,131}
+\definecolor{base0}{RGB}{131,148,150}
+\definecolor{base1}{RGB}{147,161,161}
+\definecolor{base2}{RGB}{238,232,213}
+\definecolor{base3}{RGB}{253,246,227}
+\definecolor{YELLOW}{RGB}{181,137,0}
+\definecolor{ORANGE}{RGB}{203,75,22}
+\definecolor{RED}{RGB}{220,50,47}
+\definecolor{MAGENTA}{RGB}{211,54,130}
+\definecolor{VIOLET}{RGB}{108,113,196}
+\definecolor{BLUE}{RGB}{38,139,210}
+\definecolor{CYAN}{RGB}{42,161,152}
+\definecolor{GREEN}{RGB}{133,153,0}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+  language=C++,
+  sensitive=true,
+    %backgroundcolor=\color{base3},   
+    basicstyle=\color{CYAN}\lstsansserif,
+    commentstyle=\color{RED},
+    keywordstyle=\color{BLUE},
+    numberstyle=\tiny\color{VIOLET},
+    stringstyle=\color{YELLOW},
+    identifierstyle=\color{base00},
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4,
+    xleftmargin=2.0em,
+    xrightmargin=2.0em
+}
+ 
+\lstset{style=mystyle}
+\pagestyle{fancy}
+\lhead{Shanghai Jiao Tong University}
+\chead{\thepage}
+\rhead{Tempus Fugit}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\newcommand{\stlf}[2]{\genfrac{ [ }{ ] }{0pt}{}{#1}{#2}}
+\newcommand{\stls}[2]{\genfrac{ \{ }{ \} }{0pt}{}{#1}{#2}}
+
+\begin{document}
+
+\tableofcontents
+\newpage
+\section{计算几何}
+  \subsection{二维计算几何基本操作}
+  \lstinputlisting{"Computational Geometry/2D_Geometry_Base.cpp"}
+  
+  \subsection{二维计算几何基本操作}
+  \lstinputlisting{"Computational Geometry/2D_Geometry_Base.cpp"}
+
+  \subsection{圆的面积模板}
+  \lstinputlisting{"Computational Geometry/CircleKCover.cpp"}
+
+  \subsection{多边形相关}
+  \lstinputlisting{"Computational Geometry/Polygon.cpp"}
+
+  \subsection{直线与凸包求交点}
+  \lstinputlisting{"Computational Geometry/isPL.cpp"}
+
+  \subsection{半平面交}
+  \lstinputlisting{"Computational Geometry/Half Plane Intersection.cpp"}
+
+  \subsection{最大面积空凸包}
+  \lstinputlisting{"Computational Geometry/Max Area Empty Convex Hull.cpp"}
+
+  \subsection{最近点对}
+  \lstinputlisting{"Computational Geometry/ClosestPair.cpp"}
+
+  \subsection{凸包与点集直径}
+  \lstinputlisting{"Computational Geometry/Convex Hull && Convex Diameter.cpp"}
+
+  \subsection{Farmland}
+  \lstinputlisting{"Computational Geometry/Farmland.cpp"}
+
+  \subsection{Voronoi图}
+  不能有重点, 点数应当不小于2
+  \lstinputlisting{"Computational Geometry/Voronoi.cpp"}
+
+  \subsection{四边形双费马点}
+  \lstinputlisting{"Computational Geometry/Fermat Point Of A Quadrilateral.cpp"}
+
+  \subsection{三角形和四边形的费马点}
+  \begin{itemize}
+  \item 费马点: 距几个顶点距离之和最小的点
+  \item 三角形:
+      \begin{itemize}
+      \item 若每个角都小于 $120^{\circ}$: 以每条边向外作正三角形, 得到 $\Delta ABF$, $\Delta BCD$, $\Delta CAE$, 连接$AD$, $BE$, $CF$, 三线必共点于费马点. 该点对三边的张角必然是$120^{\circ}$, 也必然是三个三角形外接圆的交点
+      \item 否则费马点一定是那个大于等于$120^{\circ}$的顶角
+      \end{itemize}
+  \item 四边形:
+      \begin{itemize}
+        \item 在凸四边形中, 费马点为对角线的交点
+        \item 在凹四边形中, 费马点位凹顶点
+      \end{itemize}
+  \end{itemize}
+
+  \subsection{三维计算几何基本操作}
+  \lstinputlisting{"Computational Geometry/3D_Geometry_Base.cpp"}
+
+  \subsection{凸多面体切割}
+  \lstinputlisting{"Computational Geometry/3D Convex Cut.cpp"}
+
+  \subsection{三维凸包}
+  不能有重点
+  \lstinputlisting{"Computational Geometry/3D Convex Hull.cpp"}
+
+  \subsection{球面点表面点距离}
+  \lstinputlisting{"Computational Geometry/DistOnBall.cpp"}
+
+  \subsection{长方体表面点距离}
+  \lstinputlisting{"Computational Geometry/DistOnCuboid.cpp"}
+
+  \subsection{最小覆盖球}
+  \lstinputlisting{"Computational Geometry/MinBall.cpp"}
+
+  \subsection{三维向量操作矩阵}
+  \begin{itemize}
+  \item 绕单位向量$u = (u_x, u_y, u_z)$右手方向旋转$\theta$度的矩阵: \\
+    $
+    \begin{bmatrix}
+      \cos\theta + u_x^2 (1 - \cos\theta)    &    u_x u_y (1 - \cos\theta) - u_z \sin\theta    &    u_x u_z (1 - \cos\theta) + u_y \sin\theta \\
+    u_y u_x (1 - \cos\theta) + u_z \sin\theta    &    \cos\theta + u_y^2 (1 - \cos\theta)    &    u_y u_z (1 - \cos\theta) - u_x \sin\theta \\
+    u_z u_x (1 - \cos\theta) - u_y \sin\theta    &    u_z u_y (1 - \cos\theta) + u_x \sin\theta    &    \cos\theta + u_z^2 (1 - \cos\theta)
+  \end{bmatrix} \\
+  = \cos\theta I
+  + \sin\theta
+  \begin{bmatrix}
+    0    &    -u_z    &    u_y \\
+    u_z    &    0    &    -u_x \\
+    -u_y    &    u_x    &    0
+  \end{bmatrix}
+  + (1 - \cos\theta)
+  \begin{bmatrix}
+    u_x ^ 2    &    u_x u_y    &    u_x u_z \\
+    u_y u_x    &    u_y ^ 2    &    u_y u_z \\
+    u_z u_x    &    u_z u_y    &    u_z ^ 2
+  \end{bmatrix}
+  $
+  \item 点$a$绕单位向量$u = (u_x, u_y, u_z)$右手方向旋转$\theta$度的对应点为
+  $a^\prime = a \cos\theta + (u \times a) \sin\theta + (u \otimes u) a (1 - \cos\theta)$
+  \item 关于向量 $v$ 作对称变换的矩阵 $H = I - 2 \frac{v v^T}{v^T v}$,
+  \item 点$a$对称点: $a^\prime = a - 2 \frac{v^T a}{v^T v} \cdot v$
+  \end{itemize}
+  \subsection{立体角}
+  对于任意一个四面体$OABC$,
+  从$O$点观察$\Delta ABC$的立体角$\tan{\frac{\Omega}{2}} = 
+  \frac{\textrm{mix}(\overrightarrow{a}, \overrightarrow{b}, \overrightarrow{c}) }{
+  |a||b||c|
+  + (\overrightarrow{a} \cdot \overrightarrow{b}) |c|
+  + (\overrightarrow{a} \cdot \overrightarrow{c}) |b|
+  + (\overrightarrow{b} \cdot \overrightarrow{c}) |a|
+}$.
+
+\section{数据结构}
+\subsection{动态凸包(只支持插入)}
+\lstinputlisting{"Data Structure/Dynamic Convex Hull (Insertion Only).cpp"}
+
+\subsection{Rope用法}
+\lstinputlisting{"Data Structure/Usage Of Rope.cpp"}
+
+\subsection{Treap}
+\lstinputlisting{"Data Structure/Treap.cpp"}
+
+\subsection{可持久化Treap}
+\lstinputlisting{"Data Structure/Functional Treap.cpp"}
+
+\subsection{左偏树}
+\lstinputlisting{"Data Structure/Leftist Heap.cpp"}
+
+\subsection{Link-Cut Tree}
+\lstinputlisting{"Data Structure/Link Cut Tree.cpp"}
+
+\subsection{树链剖分}
+\lstinputlisting{"Data Structure/HeavyLightTree.cpp"}
+
+\subsection{Splay维护数列}
+\lstinputlisting{"Data Structure/Splay_Array.cpp"}
+
+\section{字符串相关}
+\subsection{Manacher}
+\lstinputlisting{"String Related/Manacher.cpp"}
+
+\subsection{最大回文正方形}
+\lstinputlisting{"String Related/Palindrome_Square.cpp"}
+
+\subsection{KMP}
+$next[i] = \max\{len | A[0 \ldots len - 1] = A \textrm{的第i位向前或后的长度为 $len$ 的串} \}$
+
+$ext[i] = \max\{len | A[0 \ldots len - 1] = B \textrm{的第i位向前或后的长度为 $len$ 的串} \}$
+\lstinputlisting{"String Related/KMP.cpp"}
+
+\subsection{Aho-Corasick 自动机}
+\lstinputlisting{"String Related/Aho Corasick Automaton.cpp"}
+
+\subsection{后缀自动机}
+\lstinputlisting{"String Related/Suffix Automaton.cpp"}
+
+\subsection{后缀数组-1}
+待排序的字符串放在 $r[0 \ldots n - 1]$ 中, 最大值小于 $m$.
+
+$r[0 \ldots n - 2] > 0$, $r[n - 1] = 0$.
+
+结果放在 $sa[0 \ldots n - 1]$.
+\lstinputlisting{"String Related/Suffix Array Backup.cpp"}
+
+\subsection{后缀数组-2}
+\lstinputlisting{"String Related/Suffix Array.cpp"}
+
+\subsection{环串最小表示}
+\lstinputlisting{"String Related/Minimial Representation Of A Cyclic String.cpp"}
+\subsection{回文自动机}
+\lstinputlisting{"String Related/PA.cpp"}
+
+\section{图论}
+\subsection{Dominator Tree}
+\lstinputlisting{"Graph Theory/DominatorTree.cpp"}
+
+\subsection{树 Hash}
+\lstinputlisting{"Graph Theory/TreeHash.cpp"}
+
+\subsection{带花树}
+\lstinputlisting{"Graph Theory/Blossom Algorithm.cpp"}
+
+\subsection{KM}
+\lstinputlisting{"Graph Theory/KM.cpp"}
+
+\subsection{双连通分量}
+\lstinputlisting{"Graph Theory/BCC.cpp"}
+
+\subsection{强连通分量}
+\lstinputlisting{"Graph Theory/SCC.cpp"}
+
+\subsection{2-SAT 与 Kosaraju}
+注意 Kosaraju 需要建反图
+\lstinputlisting{"Graph Theory/TwoSat SCC.cpp"}
+
+\subsection{全局最小割 Stoer-Wagner}
+\lstinputlisting{"Graph Theory/Stoer-Wagner.cpp"}
+
+\subsection{Hopcroft-Karp}
+\lstinputlisting{"Graph Theory/HopcroftKarp.cpp"}
+
+\subsection{欧拉路}
+\lstinputlisting{"Graph Theory/EulerianWalk.cpp"}
+
+\subsection{稳定婚姻}
+\lstinputlisting{"Graph Theory/StableMatching.cpp"}
+
+\subsection{最大团搜索}
+\lstinputlisting{"Graph Theory/MaxClique.cpp"}
+
+\subsection{极大团计数}
+\lstinputlisting{"Graph Theory/MaxCliqueCounting.cpp"}
+
+\subsection{最小树形图}
+\lstinputlisting{"Graph Theory/Minimum Optimum branchings.cpp"}
+
+\subsection{离线动态最小生成树}
+$O (Q log^2 Q) $.
+$(qx[i], qy[i])$ 表示将编号为 $qx[i]$ 的边的权值改为 $qy[i]$,
+删除一条边相当于将其权值改为 $\infty$,
+加入一条边相当于将其权值从 $\infty$ 变成某个值.
+\lstinputlisting{"Graph Theory/Dynamic MST(Offline).cpp"}
+
+\subsection{弦图}
+\begin{itemize}
+  % \item 团数 $\le$ 色数
+  % \item 最大独立集数 $\le$ 最小团覆盖数
+\item 任何一个弦图都至少有一个单纯点, 不是完全图的弦图至少有两个不相邻的单纯点. 
+\item 设第i个点在弦图的完美消除序列第 $p(i)$个. 令 $N(v) = \{w | w \text{与} v \text{相邻且} p(w) > p(v) \}$弦图的极大团一定是 $v \cup N(v)$ 的形式. 
+\item 弦图最多有$n$个极大团. 
+\item 设 $next(v)$ 表示 $N(v)$中最前的点. 令 $w*$ 表示所有满足 $A\in B$ 的 $w$ 中最后的一个点. 
+  判断 $v \cup N(v)$是否为极大团,
+  只需判断是否存在一个 $w$, 
+  满足 $Next(w) = v$ 且 $|N(v)| + 1 \le |N(w)|$ 即可. 
+\item 最小染色：完美消除序列从后往前依次给每个点染色, 给每个点染上可以染的最小的颜色. (团数 = 色数)
+\item 最大独立集：完美消除序列从前往后能选就选. 
+\item 最小团覆盖：设最大独立集为 $\{p_1, p_2, \ldots, p_t\}$, 则 $\{p_1 \cup N(p_1), \ldots, p_t \cup N(p_t) \}$为最小团覆盖.  (最大独立集数 = 最小团覆盖数)
+\end{itemize}
+
+\lstinputlisting{"Graph Theory/MCS.cpp"}
+
+\subsection{K短路(允许重复)}
+\lstinputlisting{"Graph Theory/K-shortest Path (Repeat is allowed).cpp"}
+
+\subsection{K短路(不允许重复)}
+\lstinputlisting{"Graph Theory/K-shortest Path (Repeat is not allowed).cpp"}
+
+\subsection{小知识}
+\begin{itemize}
+\item 平面图: 一定存在一个度小于等于$5$的点. $E \le 3V - 6$. 欧拉公式: $V + F - E = 1 + \mbox{连通块数}$
+\item 图连通度: 
+  \begin{enumerate}
+  \item $k-$连通(\emph{k-connected}): 对于任意一对结点都至少存在结点各不相同的$k$条路
+  \item 点连通度(\emph{vertex connectivity}): 把图变成非连通图所需删除的最少点数
+  \item Whitney定理: 一个图是$k-$连通的当且仅当它的点连通度至少为$k$
+  \end{enumerate}
+\item Lindstroem-Gessel-Viennot Lemma:
+  给定一个图的$n$个起点和$n$个终点, 
+  令$A_{ij} = $第$i$个起点到第$j$个终点的路径条数,
+  则从起点到终点的不相交路径条数为 $det(A)$
+\item 欧拉回路与树形图的联系: 
+  对于出度等于入度的连通图
+  $s(G) = t_i(G) \prod_{j = 1}^{n} (d^+(v_j) - 1)! $
+\item 密度子图: 给定无向图, 选取点集及其导出子图, 最大化 $W_e + P_v$ (点权可负).
+  \begin{itemize}
+  \item $(S, u) = U$, $(u, T) = U - 2 P_u - D_u$, $(u, v) = (v, u) = W_e$
+  \item ans = $\frac{Un - C[S, T]}{2}$, 解集为 $S - \{s\}$
+  \end{itemize}
+\item 最大权闭合图: 选$a$则$a$的后继必须被选
+  \begin{itemize}
+  \item $P_u > 0$, $(S, u) = P_u$, $P_u < 0$, $(u, T) = -P_u$
+  \item ans = $\sum\limits_{P_u > 0}^{} P_u - C[S, T]$, 解集为 $S - \{s\}$
+  \end{itemize}
+\item 判定边是否属于最小割:
+  \begin{itemize}
+  \item 可能属于最小割: $(u, v)$ 不属于同一SCC
+  \item 一定在所有最小割中: $(u, v)$ 不属于同一SCC, 且 $S, u$ 在同一 SCC, $u, T$ 在同一SCC
+  \end{itemize}
+\item 图同构 Hash: $F_t(i) = (F_{t - 1}(i) \times A
+  + \sum_{i \rightarrow j} F_{t - 1}(j) \times B
+  + \sum_{j \leftarrow i} F_{t - 1}(j) \times C
+  + D \times (i = a)
+  ) \pmod{P}$, 枚举点$a$, 迭代$K$次后求得的$F_k(a)$就是$a$点所对应的 Hash 值. 
+  % $\arcsin x = x + \sum_{n = 1}^{\infty} \frac{(2n - 1)!!}{(2n)!!} \frac{x^{2n + 1}}{2n + 1}$
+\end{itemize}
+
+\section{数学}
+\subsection{博弈论相关}
+\begin{enumerate}
+	\item Anti-SG:\\
+		规则与Nim基本相同，取最后一个的输。\\
+		先手必胜当且仅当：\\
+		(1) 所有堆的石子数都为1且游戏的SG值为0；\\
+		(2) 有些堆的石子数大于1且游戏的SG值不为0。\\
+	\item SJ定理:\\
+		对于任意一个Anti-SG游戏，如果我们规定当局面中，所有的单一游戏的SG值为0时，游戏结束，则先手必胜当且仅当：\\
+		(1) 游戏的SG函数不为0且游戏中某个单一游戏的SG函数大于1；\\
+		(2) 游戏的SG函数为0且游戏中没有单一游戏的SG函数大于1。\\
+	\item Multi-SG游戏:\\
+		可以将一堆石子分成多堆.\\
+	\item Every-SG游戏:\\
+		每一个可以移动的棋子都要移动.\\
+		对于我们可以赢的单一游戏，我们一定要拿到这一场游戏的胜利.\\
+		只需要考虑如何让我们必胜的游戏尽可能长的玩下去，对手相反。\\
+		于是就来一个DP，\\
+		step[v] = 0；(v为终止状态）\\
+		step[v] = max{step[u]} + 1;（sg[v]>0,sg[u]=0）\\
+		step[v] = min{step[u]} + 1；(sg[v]==0）\\
+	\item 翻硬币游戏:\\
+		N枚硬币排成一排，有的正面朝上，有的反面朝上。游戏者根据某些约束翻硬币(如：每次只能翻一或两枚，或者每 次只能翻连续的几枚),但他所翻动的硬币中，最右边的必须是从正面翻到反面。谁不能翻谁输。\\
+		结论：局面的SG值为局面中每个正面朝上的棋子单一存在时的SG值的异或和。可用数学归纳法证明。\\
+	\item 无向树删边游戏:\\
+		规则如下:\\
+		给出一个有N个点的树，有一个点作为树的根节点。游戏者轮流从树中删去边，删去一条边后，不与根节点相连的部分将被移走。谁无路可走谁输。\\
+		结论:\\
+		叶子节点的SG值为0；中间节点的SG值为它的所有子节点的SG值加1后的异或和。是用数学归纳法证明。\\
+	\item Christmas Game(PKU3710):\\
+		题目大意：\\
+		有N个局部联通的图。Harry和Sally轮流从图中删边，删去一条边后，不与根节点相连的部分将被移走。Sally为先手。图是通过从基础树中加一些边得到的。所有形成的环保证不共用边，且只与基础树有一个公共点。谁无路可走谁输。环的处理成为了解题的关键。\\
+		性质：\\
+		（1）对于长度为奇数的环，去掉其中任意一个边之后，剩下的两个链长度同奇偶，抑或之后的SG值不可能为奇数，所以它的SG值为1；\\
+		（2）对于长度为偶数的环，去掉其中任意一个边之后，剩下的两个链长度异奇偶，抑或之后的SG值不可能为0，所以它的SG值为0；所以我们可以去掉所有的偶环，将所有的奇环变为长短为1的链。\\
+		这样的话，我们已经将这道题改造成了上一节的模型。\\
+	\item 无向图的删边游戏:\\
+		我们将Christmas Game这道题进行一步拓展——去掉对环的限制条件，这个模型应该怎样处理？\\
+		无向图的删边游戏：\\
+		一个无向联通图，有一个点作为图的根。游戏者轮流从图中删去边，删去一条边后，不与根节点相连的部 分将被移走。谁无路可走谁输。 \\
+		结论：\\
+		对无向图做如下改动：将图中的任意一个偶环缩成一个新点，任意一个奇环缩成一个新点加一个新边；所有连到原先环上的边全部改为与新点相连。这样的改动不会影响图的SG值。\\
+	\item Staircase nim:\\
+		楼梯从地面由下向上编号为0到n。游戏者在每次操作时可以将楼梯j(1<=j<=n)上的任意多但至少一个硬币移动到楼梯j-1上。将最后一枚硬币移至地上的人获胜。\\
+		结论：\\
+		设该游戏Sg函数为奇数格棋子数的Xor和S。\\
+		如果S=0，则先手必败，否则必胜。\\
+\end{enumerate}
+
+\subsection{单纯形Cpp}
+max $\left \{ cx | Ax \le b, x \ge 0 \right \}$
+\lstinputlisting{"Math/SimplexCpp.cpp"}
+
+\subsection{自适应辛普森}
+\lstinputlisting{"Math/AdaptiveSimpson.cpp"}
+
+\subsection{FFT}
+\lstinputlisting{"Math/FFT.cpp"}
+
+\subsection{整数FFT}
+\lstinputlisting{"Math/FFT_Integer.cpp"}
+
+\subsection{扩展欧几里得}
+$ax + by = g = gcd(x, y)$
+\lstinputlisting{"Math/ExGcd.cpp"}
+
+\subsection{线性同余方程}
+\begin{itemize}
+\item 中国剩余定理:
+  设$m_1, m_2, \cdots, m_k$ 两两互素, 则同余方程组 $x \equiv a_i \pmod{m_i} \textrm{for $i = 1, 2, \cdots, k$}$
+  在$[0, M = m_1 m_2 \cdots m_k)$内有唯一解. 
+  记 $M_i = M / m_i$,
+  找出 $p_i$ 使得 $M_i p_i \equiv 1 \pmod{m_i}$,
+  记 $e_i = M_i p_i$,
+  则 $x \equiv e_1 a_1 + e_2 a_2 + \cdots + e_k a_k \pmod{M}$
+\item 多变元线性同余方程组:
+  方程的形式为 $a_1 x_1 + a_2 x_2 + \cdots + a_n x_n + b \equiv 0 \pmod{m}$,
+  令 $d = (a_1, a_2, \cdots, a_n, m)$,
+  有解的充要条件是 $d | b$, 解的个数为 $m^{n - 1} d$
+\end{itemize}
+
+\subsection{Miller-Rabin 素性测试}
+\lstinputlisting{"Math/MillerRabin.cpp"}
+
+\subsection{PollardRho}
+\lstinputlisting{"Math/PollardRho.cpp"}
+
+\subsection{多项式求根}
+\lstinputlisting{"Math/Root Of Polynomial.cpp"}
+
+\subsection{线性递推}
+for $a_{i + n} = (\sum_{i = 0}^{n - 1} k_j a_{i + j}) + d$,
+$a_m = (\sum_{i = 0}^{n - 1} c_i a_i) + c_n d$
+\lstinputlisting{"Math/Linear Recursive Equation.cpp"}
+
+\subsection{原根}
+原根 $g$: $g$ 是模 $n$ 简化剩余系构成的乘法群的生成元.
+模 $n$ 有原根的充要条件是 $n = 2, 4, p^n, 2p^n$, 其中 $p$ 是奇质数, $n$ 是正整数
+\lstinputlisting{"Math/PrimitiveRoot.cpp"}
+
+\subsection{离散对数}
+$A ^ x \equiv B \pmod{C}$, 对非质数 $C$ 也适用.
+\lstinputlisting{"Math/ModLog.cpp"}
+
+\subsection{平方剩余}
+\begin{itemize}
+\item Legrendre Symbol: 对奇质数 $p$, $(\frac{a}{p}) =
+  \left\{
+    \begin{aligned}
+      &  1 & \textrm{是平方剩余} \\
+      & -1 & \textrm{是非平方剩余} \\
+      &  0 & \textrm{$a \equiv 0 \pmod{p}$}
+    \end{aligned}
+  \right.
+  = a^{\frac{p - 1}{2}} \bmod{p} $
+\item 若 $p$ 是奇质数, $(\frac{-1}{p}) = 1$ 当且仅当 $p \equiv 1 \pmod{4}$
+\item 若 $p$ 是奇质数, $(\frac{ 2}{p}) = 1$ 当且仅当 $p \equiv \pm 1 \pmod{8}$
+\item 若 $p, q$ 是奇素数且互质, $(\frac{p}{q})(\frac{q}{p}) = (-1)^{\frac{p - 1}{2} \times \frac{q - 1}{2}}$
+\item Jacobi Symbol: 对奇数 $n = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k ^ {\alpha_k} $, 
+  $(\frac{a}{n}) = (\frac{a}{p_1})^{\alpha_1} (\frac{a}{p_2})^{\alpha_2} \cdots (\frac{a}{p_k})^{\alpha_k}$
+\item Jacobi Symbol 为 $-1$ 则一定不是平方剩余, 所有平方剩余的 Jacobi Symbol 都是 1, 但1不一定是平方剩余
+\end{itemize}
+
+$ax^2 + bx + c \equiv 0 \pmod{p}$, 其中 $a \ne 0 \pmod{p}$, 且 $p$ 是质数
+\lstinputlisting{"Math/QuadraticResidue.cpp"}
+
+\subsection{N次剩余}
+\begin{itemize}
+\item 若$p$为奇质数, $a$为$p$的$n$次剩余的充要条件是$a^{\frac{p - 1}{(a, p - 1)}} \equiv 1 \pmod{p}$.
+\end{itemize}
+$x^N \equiv a \pmod{p}$, 其中$p$是质数
+\lstinputlisting{"Math/Nth Residue.cpp"}
+
+\subsection{Pell方程}
+$\begin{pmatrix}
+  x_k \\ y_k
+\end{pmatrix} = 
+\begin{pmatrix}
+  x_1 & dy_1 \\
+  y_1 & x_1
+\end{pmatrix} ^ {k - 1}
+\begin{pmatrix}
+  x_1 \\ y_1
+\end{pmatrix}
+$
+
+\lstinputlisting{"Math/Pell.cpp"}
+
+\subsection{小知识}
+\begin{itemize}
+\item 勾股数: 设正整数$n$的质因数分解为$n = \prod p_i ^ {a_i}$, 
+  则$x^2+y^2=n$有整数解的充要条件是$n$中不存在形如$p_i \equiv 3\pmod{4}$且指数$a_i$为奇数的质因数$p_i$.
+  $(\frac{a - b}{2})^2 + ab = (\frac{a + b}{2})^2$.
+\item 素勾股数: 若 $m$ 和 $n$ 互质, 而且 $m$ 和 $n$ 中有一个是偶数, 则$a = m^2 - n^2$, $b = 2mn$, $c = m^2 + n^2$, 则$a$、$b$、$c$是素勾股数. 
+\item Stirling公式: $n! \approx \sqrt{2 \pi n} (\frac{n}{e})^n$
+\item Pick定理: 简单多边形, 不自交, 顶点如果全是整点. 则: 
+  $ \textrm{严格在多边形内部的整点数} + \frac{1}{2} \textrm{在边上的整点数} - 1 = \textrm{面积}$
+\item Mersenne素数: $p$是素数且$2^p-1$的数是素数. (10000以内的$p$有: 2, 3, 5, 7, 13, 17, 19, 31, 61, 89, 107, 127, 521, 607, 1279, 2203, 2281, 3217, 4253, 4423, 9689, 9941)
+\item 序列差分表: 差分表的第$0$条对角线确定原序列. 
+  设原序列为$h_i$, 第$0$条对角线为$c_0,c_1,\ldots,c_p,0,0,\ldots$. 
+  有这样两个公式: 
+  $h_n = \binom{n}{0}c_0 + \binom{n}{1}c_1 + \ldots + \binom{n}{p} c_p$, 
+  $\sum_{k = 0}^{n}h_k = \binom{n+1}{1}c_0 + \binom{n+1}{2}c_2 + \ldots + \binom{n+1}{p+1}c_p$
+\item GCD:
+  $\gcd(2^a-1,2^b-1)=2^{\gcd(a,b)}-1$
+\item Fermat分解算法: 
+  从$t=\sqrt{n}$开始, 
+  依次检查$t^2-n,(t+1)^2-n,(t+2)^2-n,\ldots$, 
+  直到出现一个平方数$y$, 
+  由于$t ^ 2 - y ^ 2 = n$, 
+  因此分解得$n = (t -y)(t + y)$. 
+  显然, 当两个因数很接近时这个方法能很快找到结果, 
+  但如果遇到一个素数, 则需要检查$\frac{n + 1}{2} - \sqrt{n}$个整数
+\item 牛顿迭代:
+  $x_1 = x_0 - \frac{f(x_0)}{f^\prime(x_0)}$
+\item 球与盒子的动人故事: ($n$个球, $m$个盒子, $S$为第二类斯特林数)
+  \begin{enumerate}
+  \item 球同, 盒同, 无空: dp
+  \item 球同, 盒同, 可空: dp
+  \item 球同, 盒不同, 无空: $\binom{n - 1}{m - 1}$
+  \item 球同, 盒不同, 可空: $\binom{n + m - 1}{n - 1}$
+  \item 球不同, 盒同, 无空: $S(n, m)$
+  \item 球不同, 盒同, 可空: $\sum_{k = 1}^{m} S(n, k)$
+  \item 球不同, 盒不同, 无空: $m! S(n, m)$
+  \item 球不同, 盒不同, 可空: $m^n$
+  \end{enumerate}
+\item 组合数奇偶性: 若 $(n \& m) = m$, 则 $\binom{n}{m}$ 为奇数, 否则为偶数
+\item 格雷码 $G(x) = x \otimes (x >> 1) $
+\item Fibonacci数: 
+  \begin{itemize}
+  \item $F_0 = F_1 = 1$, $F_i = F_{i - 1} + F_{i - 2}$, $F_{-i} = (-1) ^ {i - 1} F_i$
+  \item $F_i = \cfrac{1}{\sqrt{5}} ((\cfrac{1 + \sqrt{5}}{2}) ^ n - (\cfrac{1 - \sqrt{5}}{2}) ^ {n}) $
+  \item $\gcd(F_n,F_m)=F_{\gcd(n,m)}$
+  \item $F_{i + 1} F_i - F_i^2 = (-1) ^ i$
+  \item $F_{n + k} = F_k F_{n + 1} + F_{k - 1} F_n$
+  \end{itemize}
+\item 第一类 Stirling 数: $\stlf{n}{k}$ 代表第一类无符号 Stirling 数, 代表将 $n$ 阶置换群中有 $k$ 个环的置换个数; $s(n,k)$代表有符号型, $s(n, k) = (-1)^{n - k}\stlf{n}{k}$.
+  \begin{itemize}
+  \item $(x)^{(n)} = \sum\limits_{k = 0}^{n}\stlf{n}{k}x ^k$, $(x)_{n} = \sum\limits_{k = 0}^{n} s(n, k) x ^k$
+  \item $\stlf{n}{k} = n\stlf{n - 1}{k} + \stlf{n - 1}{k - 1}$, $\stlf{0}{0} = 1$, $\stlf{n}{0} = \stlf{0}{n} = 0$
+  \item $\stlf{n}{n - 2} = \frac{1}{4} (3n - 1) \binom{n}{3} $, $\stlf{n}{n - 3} = \binom{n}{2} \binom{n}{4} $
+  \item $\sum\limits_{k = 0}^{a}\stlf{n}{k} = n! - \sum\limits_{k = 0}^{n} \stlf{n}{k + a + 1}$
+  \item $\sum\limits_{p = k}^{n}\stlf{n}{p}\binom{p}{k} = \stlf{n + 1}{k + 1}$
+    % \item $s(n, n - p) = \frac{1}{(n - p - 1)!} \sum\limits_{0 \le k1, k2, \ldots, k_p: \sum}^{n}$
+  \end{itemize}
+\item 第二类 Stirling 数: $\stls{n}{k} = S(n, k)$ 代表 $n$个不同的球, 放到 $k$ 个相同的盒子里, 盒子非空.
+  \begin{itemize}
+  \item $\stls{n}{k} = \frac{1}{k!} \sum\limits_{j = 0}^{k} (-1)^j \binom{k}{j} (k - j)^n$
+  \item $\stls{n + 1}{k} = k\stls{n}{k} + \stls{n}{k - 1}$, $\stls{0}{0} = 1$, $\stls{n}{0} = \stls{0}{n} = 0$
+  \item 奇偶性: $(n - k) \& \frac{k - 1}{2} == 0$
+  \end{itemize}
+\item Bell 数: $B_n$ 代表将 $n$ 个元素划分成若干个非空集合的方案数
+  \begin{itemize}
+  \item $B_0 = B_1 = 1$, $B_n = \sum\limits_{k = 0}^{n - 1} \binom{n - 1}{k} B_k$
+  \item $B_n = \sum\limits_{k = 0}^{n} \stls{n}{k} $
+  \item Bell 三角形: $a_{1, 1} = 1$, $a_{n, 1} = a_{n - 1, n - 1}$, $a_{n, m} = a_{n, m - 1} + a_{n - 1, m - 1}$, $B_n = a_{n, 1}$
+  \item 对质数$p$, $B_{n + p} \equiv B_n + B_{n + 1} \pmod{p}$
+  \item 对质数$p$, $B_{n + p^m} \equiv mB_n + B_{n + 1} \pmod{p}$
+  \item 对质数$p$, 模的周期一定是 $\frac{p^p - 1}{p - 1}$ 的约数, $p \le 101$时就是这个值
+  \item 从$B_0$开始, 前几项是 $1, 1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975 \cdots$
+  \end{itemize}
+\item Bernoulli 数
+  \begin{itemize}
+  \item $B_0 = 1$, $B_1 = \frac{1}{2}$, $B_2 = \frac{1}{6}$, $B_4 = -\frac{1}{30}$, $B_6 = \frac{1}{42}$, $B_8 = B_4$, $B_{10} = \frac{5}{66}$
+  \item $\sum\limits_{k = 1}^{n} k^m = \cfrac{1}{m + 1} \sum\limits_{k = 0}^{m} \binom{m + 1}{k} B_k n ^ {m + 1 - k} $
+  \item $B_m = 1 - \sum\limits_{k = 0}^{m - 1} \binom{m}{k} \frac{B_k}{m - k + 1}$
+  \end{itemize}
+\item 完全数: $x$ 是偶完全数等价于 $x = 2^{n - 1} (2^n - 1)$, 且 $2^n - 1$ 是质数.
+\end{itemize}
+
+\section{其他}
+\subsection{Extended LIS}
+\lstinputlisting{"Others/K Disjoint LIS.cpp"}
+
+\subsection{生成 nCk}
+\lstinputlisting{"Others/next nCk.cpp"}
+
+\subsection{nextPermutation}
+\lstinputlisting[language=Java]{"Others/nextPermutation.java"}
+
+\subsection{Josephus 数与逆 Josephus 数}
+\lstinputlisting{"Others/Josephus.cpp"}
+
+\subsection{直线下的整点个数}
+求 $\sum_{i=0}^{n-1} \lfloor\frac{a+bi}{m}\rfloor$
+\lstinputlisting{"Others/DotsBelowLine.cpp"}
+
+\subsection{Java多项式}
+\lstinputlisting[language=Java]{"Others/Java Polynomial.java"}
+
+\subsection{long long 乘法取模}
+\lstinputlisting{"Others/Long Long Multi and Mod.cpp"}
+
+\subsection{重复覆盖}
+\lstinputlisting{"Others/Multiple Cover - Full.cpp"}
+
+\subsection{星期几判定}
+\lstinputlisting{"Others/Zeller.cpp"}
+
+\subsection{LCSequence Fast}
+\lstinputlisting{"Others/LCSFast.cpp"}
+
+\subsection{C Split}
+\lstinputlisting{"Others/C Split.cpp"}
+
+\subsection{builtin系列}
+\begin{itemize}
+\item int \_\_builtin\_ffs (unsigned int x) 返回x的最后一位1的是从后向前第几位,  比如7368( 1110011001000) 返回4. 
+\item int \_\_builtin\_clz (unsigned int x) 返回前导的0的个数. 
+\item int \_\_builtin\_ctz (unsigned int x) 返回后面的0个个数, 和\_\_builtin\_clz相对. 
+\item int \_\_builtin\_popcount (unsigned int x) 返回二进制表示中1的个数. 
+\item int \_\_builtin\_parity (unsigned int x) 返回x的奇偶校验位, 也就是x的1的个数模2的结果. 
+\end{itemize}
+
+\section{Templates}
+
+\subsection{Eclipse配置}
+Exec=env UBUNTU\_MENUPROXY= /opt/eclipse/eclipse
+
+preference general keys 把 word completion 设置成 alt+c, 把 content assistant 设置成 alt + /
+
+\subsection{C++}
+\lstinputlisting{"Templates/cpp_template.cpp"}
+
+\subsection{Java}
+\lstinputlisting[language=Java]{"Templates/java_template.java"}
+
+\subsection{gcc配置}
+在 .bashrc 中加入 export CXXFLAGS="-Wall -Wconversion -Wextra -g3"
+ 
+\end{document}`
