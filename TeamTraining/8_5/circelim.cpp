@@ -73,9 +73,6 @@ bool findPath(){
 			}
 		}
 	}
-/*	printf("!!!!\n");
-	for(int i=0;i<=T;++i) printf("%d ",dis[i]);
-	printf("\n!!!!\n");*/
 	bool flag=false;
 	for(int j=0;j<=T;++j){
 		for(edge *ii=V[j];ii;ii=ii->nxt) if(ii->u&&ii->v+dis[j]>dis[ii->t]){

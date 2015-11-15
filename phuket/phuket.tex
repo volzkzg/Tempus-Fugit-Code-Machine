@@ -1,7 +1,7 @@
 \documentclass[landscape, twocolumn, 8pt, a4paper, twoside]{extarticle}
 
 
-
+\usepackage{setspace}%使用间距宏包
 \usepackage{mathrsfs} %支持花体字母
 \usepackage{bm, amsmath, amsthm, graphicx, amsfonts, fancyhdr, ctable, pict2e, multirow, rotating, geometry, listings, color, fontspec, geometry}
 \usepackage{xeCJK}
@@ -66,9 +66,9 @@
 \newcommand{\stls}[2]{\genfrac{ \{ }{ \} }{0pt}{}{#1}{#2}}
 
 \begin{document}
-
-\tableofcontents
-\newpage
+\begin{spacing}{0.1}%%行间距变为double-space
+%\tableofcontents
+%\newpage
 \section{计算几何}
   \subsection{二维计算几何基本操作}
   \lstinputlisting{"Computational Geometry/2D_Geometry_Base.cpp"}
@@ -214,15 +214,12 @@ $ext[i] = \max\{len | A[0 \ldots len - 1] = B \textrm{的第i位向前或后的�
 \subsection{后缀自动机}
 \lstinputlisting{"String Related/Suffix Automaton.cpp"}
 
-\subsection{后缀数组-1}
+\subsection{后缀数组}
 待排序的字符串放在 $r[0 \ldots n - 1]$ 中, 最大值小于 $m$.
 
 $r[0 \ldots n - 2] > 0$, $r[n - 1] = 0$.
 
 结果放在 $sa[0 \ldots n - 1]$.
-\lstinputlisting{"String Related/Suffix Array Backup.cpp"}
-
-\subsection{后缀数组-2}
 \lstinputlisting{"String Related/Suffix Array.cpp"}
 
 \subsection{环串最小表示}
@@ -256,8 +253,8 @@ $r[0 \ldots n - 2] > 0$, $r[n - 1] = 0$.
 \subsection{全局最小割 Stoer-Wagner}
 \lstinputlisting{"Graph Theory/Stoer-Wagner.cpp"}
 
-\subsection{Hopcroft-Karp}
-\lstinputlisting{"Graph Theory/HopcroftKarp.cpp"}
+%\subsection{Hopcroft-Karp}
+%\lstinputlisting{"Graph Theory/HopcroftKarp.cpp"}
 
 \subsection{欧拉路}
 \lstinputlisting{"Graph Theory/EulerianWalk.cpp"}
@@ -440,10 +437,10 @@ for $a_{i + n} = (\sum_{i = 0}^{n - 1} k_j a_{i + j}) + d$,
 $a_m = (\sum_{i = 0}^{n - 1} c_i a_i) + c_n d$
 \lstinputlisting{"Math/Linear Recursive Equation.cpp"}
 
-\subsection{原根}
-原根 $g$: $g$ 是模 $n$ 简化剩余系构成的乘法群的生成元.
-模 $n$ 有原根的充要条件是 $n = 2, 4, p^n, 2p^n$, 其中 $p$ 是奇质数, $n$ 是正整数
-\lstinputlisting{"Math/PrimitiveRoot.cpp"}
+%\subsection{原根}
+%原根 $g$: $g$ 是模 $n$ 简化剩余系构成的乘法群的生成元.
+%模 $n$ 有原根的充要条件是 $n = 2, 4, p^n, 2p^n$, 其中 $p$ 是奇质数, $n$ 是正整数
+%\lstinputlisting{"Math/PrimitiveRoot.cpp"}
 
 \subsection{离散对数}
 $A ^ x \equiv B \pmod{C}$, 对非质数 $C$ 也适用.
@@ -634,5 +631,5 @@ preference general keys 把 word completion 设置成 alt+c, 把 content assista
 
 \subsection{gcc配置}
 在 .bashrc 中加入 export CXXFLAGS="-Wall -Wconversion -Wextra -g3"
- 
+\end{spacing}
 \end{document}
