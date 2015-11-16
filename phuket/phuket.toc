@@ -1,0 +1,90 @@
+\contentsline {section}{\numberline {1}计算几何}{2}
+\contentsline {subsection}{\numberline {1.1}二维计算几何基本操作}{2}
+\contentsline {subsection}{\numberline {1.2}圆的面积模板}{3}
+\contentsline {subsection}{\numberline {1.3}多边形相关}{3}
+\contentsline {subsection}{\numberline {1.4}直线与凸包求交点}{4}
+\contentsline {subsection}{\numberline {1.5}半平面交}{4}
+\contentsline {subsection}{\numberline {1.6}最大面积空凸包}{4}
+\contentsline {subsection}{\numberline {1.7}最近点对}{4}
+\contentsline {subsection}{\numberline {1.8}凸包与点集直径}{4}
+\contentsline {subsection}{\numberline {1.9}Farmland}{5}
+\contentsline {subsection}{\numberline {1.10}Voronoi图}{5}
+\contentsline {subsection}{\numberline {1.11}四边形双费马点}{6}
+\contentsline {subsection}{\numberline {1.12}三角形和四边形的费马点}{6}
+\contentsline {subsection}{\numberline {1.13}三维计算几何基本操作}{7}
+\contentsline {subsection}{\numberline {1.14}凸多面体切割}{7}
+\contentsline {subsection}{\numberline {1.15}三维凸包}{7}
+\contentsline {subsection}{\numberline {1.16}球面点表面点距离}{8}
+\contentsline {subsection}{\numberline {1.17}长方体表面点距离}{8}
+\contentsline {subsection}{\numberline {1.18}最小覆盖球}{8}
+\contentsline {subsection}{\numberline {1.19}三维向量操作矩阵}{8}
+\contentsline {subsection}{\numberline {1.20}立体角}{9}
+\contentsline {section}{\numberline {2}数据结构}{9}
+\contentsline {subsection}{\numberline {2.1}动态凸包(只支持插入)}{9}
+\contentsline {subsection}{\numberline {2.2}Rope用法}{9}
+\contentsline {subsection}{\numberline {2.3}Treap}{9}
+\contentsline {subsection}{\numberline {2.4}可持久化Treap}{9}
+\contentsline {subsection}{\numberline {2.5}左偏树}{9}
+\contentsline {subsection}{\numberline {2.6}Link-Cut Tree}{9}
+\contentsline {section}{\numberline {3}字符串相关}{10}
+\contentsline {subsection}{\numberline {3.1}Manacher}{10}
+\contentsline {subsection}{\numberline {3.2}KMP}{10}
+\contentsline {subsection}{\numberline {3.3}Aho-Corasick 自动机}{10}
+\contentsline {subsection}{\numberline {3.4}后缀自动机}{10}
+\contentsline {subsection}{\numberline {3.5}后缀数组}{11}
+\contentsline {subsection}{\numberline {3.6}环串最小表示}{11}
+\contentsline {subsection}{\numberline {3.7}回文自动机}{11}
+\contentsline {section}{\numberline {4}图论}{12}
+\contentsline {subsection}{\numberline {4.1}Dominator Tree}{12}
+\contentsline {subsection}{\numberline {4.2}带花树}{12}
+\contentsline {subsection}{\numberline {4.3}KM}{13}
+\contentsline {subsection}{\numberline {4.4}双连通分量}{13}
+\contentsline {subsection}{\numberline {4.5}强连通分量}{13}
+\contentsline {subsection}{\numberline {4.6}2-SAT 与 Kosaraju}{14}
+\contentsline {subsection}{\numberline {4.7}全局最小割 Stoer-Wagner}{14}
+\contentsline {subsection}{\numberline {4.8}重口味费用流}{14}
+\contentsline {subsection}{\numberline {4.9}欧拉路}{14}
+\contentsline {subsection}{\numberline {4.10}稳定婚姻}{15}
+\contentsline {subsection}{\numberline {4.11}最大团搜索}{15}
+\contentsline {subsection}{\numberline {4.12}极大团计数}{15}
+\contentsline {subsection}{\numberline {4.13}最小树形图}{15}
+\contentsline {subsection}{\numberline {4.14}离线动态最小生成树}{16}
+\contentsline {subsection}{\numberline {4.15}弦图}{16}
+\contentsline {subsection}{\numberline {4.16}K短路(允许重复)}{17}
+\contentsline {subsection}{\numberline {4.17}K短路(不允许重复)}{17}
+\contentsline {subsection}{\numberline {4.18}小知识}{18}
+\contentsline {section}{\numberline {5}数学}{18}
+\contentsline {subsection}{\numberline {5.1}博弈论相关}{18}
+\contentsline {subsection}{\numberline {5.2}单纯形Cpp}{19}
+\contentsline {subsection}{\numberline {5.3}自适应辛普森}{19}
+\contentsline {subsection}{\numberline {5.4}FFT}{19}
+\contentsline {subsection}{\numberline {5.5}整数FFT}{19}
+\contentsline {subsection}{\numberline {5.6}扩展欧几里得}{20}
+\contentsline {subsection}{\numberline {5.7}线性同余方程}{20}
+\contentsline {subsection}{\numberline {5.8}Miller-Rabin 素性测试}{20}
+\contentsline {subsection}{\numberline {5.9}PollardRho}{20}
+\contentsline {subsection}{\numberline {5.10}多项式求根}{20}
+\contentsline {subsection}{\numberline {5.11}线性递推}{21}
+\contentsline {subsection}{\numberline {5.12}离散对数}{21}
+\contentsline {subsection}{\numberline {5.13}平方剩余}{21}
+\contentsline {subsection}{\numberline {5.14}N次剩余}{21}
+\contentsline {subsection}{\numberline {5.15}Pell方程}{22}
+\contentsline {subsection}{\numberline {5.16}小知识}{22}
+\contentsline {section}{\numberline {6}其他}{23}
+\contentsline {subsection}{\numberline {6.1}Extended LIS}{23}
+\contentsline {subsection}{\numberline {6.2}生成 nCk}{23}
+\contentsline {subsection}{\numberline {6.3}nextPermutation}{23}
+\contentsline {subsection}{\numberline {6.4}Josephus 数与逆 Josephus 数}{23}
+\contentsline {subsection}{\numberline {6.5}直线下的整点个数}{23}
+\contentsline {subsection}{\numberline {6.6}Java多项式}{23}
+\contentsline {subsection}{\numberline {6.7}long long 乘法取模}{23}
+\contentsline {subsection}{\numberline {6.8}重复覆盖}{23}
+\contentsline {subsection}{\numberline {6.9}星期几判定}{24}
+\contentsline {subsection}{\numberline {6.10}LCSequence Fast}{24}
+\contentsline {subsection}{\numberline {6.11}C Split}{24}
+\contentsline {subsection}{\numberline {6.12}builtin系列}{24}
+\contentsline {section}{\numberline {7}Templates}{24}
+\contentsline {subsection}{\numberline {7.1}Eclipse配置}{24}
+\contentsline {subsection}{\numberline {7.2}C++}{25}
+\contentsline {subsection}{\numberline {7.3}Java}{25}
+\contentsline {subsection}{\numberline {7.4}gcc配置}{25}
